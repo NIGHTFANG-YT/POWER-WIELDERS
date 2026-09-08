@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POWER WIELDERS</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #080808;
+      color: white;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .game {
+      width: 100%;
+      max-width: 500px;
+      min-height: 100vh;
+      padding: 25px;
+      text-align: center;
+      background: linear-gradient(180deg, #111, #050505);
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #00eaff;
+      text-shadow: 0 0 15px #00eaff;
+      margin-top: 40px;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 16px;
+    }
+
+    .power-box {
+      margin-top: 50px;
+      padding: 25px;
+      border: 2px solid #00eaff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00eaff55;
+    }
+
+    .power-box h2 {
+      color: #ff3131;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #00eaff;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: white;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #00eaff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="game">
+
+    <h1>POWER WIELDERS</h1>
+
+    <p class="subtitle">
+      Enter a world where warriors control incredible powers.
+    </p>
+
+    <div class="power-box">
+      <h2>⚡ POWER CORE ⚡</h2>
+
+      <p>Choose your destiny.</p>
+
+      <button onclick="startGame()">START GAME</button>
+
+      <button onclick="choosePower()">CHOOSE POWER</button>
+
+      <div id="message"></div>
+    </div>
+
+  </div>
+
+  <script>
+    function startGame() {
+      document.getElementById("message").inner
